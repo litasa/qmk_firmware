@@ -4,4 +4,5 @@ enum custom_keycodes {
   KC_MY_ARROW_RIGHT,
   KC_MY_DOUBLE_COLON,
   KC_MY_TILDE,
+  KC_MY_SHIFT_CAPS,
 };

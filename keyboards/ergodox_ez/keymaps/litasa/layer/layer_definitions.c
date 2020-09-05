@@ -1,8 +1,8 @@
 enum layers {
   BASE,
   SYMBOLS,
-  UTILITY,
+  UTILITY_NUMBER,
   GAME,
   MOVEMENT,
-  NUMBER,
+  QWERTY,
 };

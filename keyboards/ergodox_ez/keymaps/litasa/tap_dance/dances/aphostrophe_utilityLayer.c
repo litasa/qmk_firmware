@@ -7,7 +7,7 @@ void aphostrophe_utilityLayer_finished(qk_tap_dance_state_t *state, void *user_d
         case SINGLE_TAP:
             break;
         case SINGLE_HOLD:
-            layer_on(UTILITY);
+            layer_on(UTILITY_NUMBER);
             break;
     }
 }
@@ -19,7 +19,7 @@ void aphostrophe_utilityLayer_reset(qk_tap_dance_state_t *state, void *user_data
             tap_code(SE_APOS);
             break;
         case SINGLE_HOLD:
-            layer_off(UTILITY);
+            layer_off(UTILITY_NUMBER);
             break;
 
     }
