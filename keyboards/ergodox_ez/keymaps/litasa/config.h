@@ -6,7 +6,7 @@
 #define AUTO_SHIFT_TIMEOUT 185
 
 #undef TAPPING_TERM
-#define TAPPING_TERM    175
+#define TAPPING_TERM    150
 #define TAPPING_TERM_PER_KEY
 #define RETRO_TAPPING
 
