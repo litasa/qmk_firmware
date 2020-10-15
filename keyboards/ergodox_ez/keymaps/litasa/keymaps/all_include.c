@@ -6,8 +6,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,             KC_A,                      KC_O,        KC_E,    KC_I,    KC_U,
         TD(SHIFT_CAPS),     TD(APOSTHROPHE_UTILLAYER), KC_Q,        KC_J,    KC_K,    KC_X, KC_BSPACE,
         KC_LCTRL,           KC_LALT,                   MO(UTILITY_NUMBER), _______, KC_LGUI,
-                              KC_LGUI, KC_DELETE,
-                                       _______,
+                              KC_LGUI, _______,
+                                       KC_DELETE,
         LSFT_T(KC_SPACE), KC_MY_MOVEMENT_LAYER, KC_BSPACE,
 
         // right hand
@@ -15,7 +15,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,   KC_B,    KC_G,    KC_C,    KC_R,    KC_Z,     _______,
                    KC_D,    KC_S,    KC_T,    KC_H,    KC_N,     _______,
         KC_BSPACE, KC_F,    KC_M,    KC_W,    KC_V,    KC_COMMA, KC_CAPSLOCK,
-                            _______, _______, _______, _______,  _______,
+                            KC_LEFT,  KC_DOWN, KC_UP,  KC_RIGHT,  KC_RCTRL,
         KC_APPLICATION, TG(GAME),
         _______,
         KC_DELETE, MO(SYMBOLS), LCTL_T(KC_ENTER)
@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______,  _______, _______,    _______,   _______,    _______,
         _______, _______,  _______, _______,    _______,   _______, TG(MOVEMENT),
         _______, KC_LEFT,  KC_DOWN, KC_UP,      KC_RIGHT,  _______,
-        _______, _______, _______, LCTL(KC_C), LCTL(KC_V), LCTL(KC_X),    _______,
+        _______, _______, LCTL(KC_C), LCTL(KC_X), LCTL(KC_V), _______,    _______,
         _______, _______,  _______, _______, _______,
                                       _______, _______,
                                                _______,
