@@ -4,7 +4,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_ESCAPE,          KC_1,                      KC_2,        KC_3,    KC_4,    KC_5, _______,
         MO(UTILITY_NUMBER), _______,                   KC_L,        KC_DOT,  KC_P,    KC_Y, LALT(KC_G),
         KC_TAB,             KC_A,                      KC_O,        KC_E,    KC_I,    KC_U,
-        TD(SHIFT_CAPS),     TD(APOSTHROPHE_UTILLAYER), KC_Q,        KC_J,    KC_K,    KC_X, KC_BSPACE,
+        KC_LSHIFT,     TD(APOSTHROPHE_UTILLAYER), KC_Q,        KC_J,    KC_K,    KC_X, KC_BSPACE,
         KC_LCTRL,           KC_LALT,                   MO(UTILITY_NUMBER), _______, KC_LGUI,
                               KC_LGUI, KC_DELETE,
                                        KC_ENTER,
