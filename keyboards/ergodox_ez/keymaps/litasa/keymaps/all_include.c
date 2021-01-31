@@ -100,30 +100,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                  SE_H, SE_J, SE_K, SE_L, SE_ODIA, SE_ADIA,
         TO(0),   SE_N, SE_M, SE_COMM, SE_DOT, SE_MINS, KC_RSHIFT,
                           _______, _______, _______, _______, KC_RCTRL,
-        _______, TO(GAME),
+        _______, _______,
         _______,
         _______, _______, KC_ENTER
-    ),
-        [GAME] = LAYOUT_ergodox (
-        // left hand
-        XXXXXXX, XXXXXXX,   KC_1,    KC_2,    KC_3,    KC_4,    KC_5,
-        XXXXXXX, XXXXXXX,   KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,
-        XXXXXXX, KC_LSHIFT, KC_A,    KC_S,    KC_D,    KC_F,
-        XXXXXXX, KC_LCTRL,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-        XXXXXXX, XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX,
-                              XXXXXXX, XXXXXXX,
-                                       XXXXXXX,
-                   KC_SPACE, KC_SPACE, XXXXXXX,
-
-        // right hand
-        _______, _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______, _______,
-                 _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______, _______,
-                          _______, _______, _______, _______, TO(0),
-        XXXXXXX, XXXXXXX,
-        XXXXXXX,
-        XXXXXXX, XXXXXXX, XXXXXXX
     ),
     // [UTILITY] = LAYOUT_ergodox (
     //     // left hand

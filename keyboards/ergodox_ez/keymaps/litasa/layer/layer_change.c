@@ -36,19 +36,8 @@ void set_led(uint32_t layer)
     }
 }
 
-void disable_autoshift(uint32_t layer)
-{
-    if (layer == GAME || layer == QWERTY)
-    {
-        autoshift_disable();
-        return;
-    }
-    autoshift_enable();
-}
-
 uint32_t layer_state_set_user(uint32_t state) {
   uint8_t layer = biton32(state);
   set_led(layer);
-  disable_autoshift(layer);
   return state;
 };
