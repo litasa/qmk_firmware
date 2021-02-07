@@ -2,9 +2,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [BASE] = LAYOUT_ergodox (
         // left hand
         KC_ESCAPE,          KC_1,                      KC_2,        KC_3,    KC_4,    KC_5, _______,
-        MO(UTILITY_NUMBER), SE_ODIA,                   KC_L,        KC_DOT,  KC_P,    KC_Y, LALT(KC_G),
+        MO(UTILITY_NUMBER), TD(OE_UTILITY_LAYER),                   KC_L,        KC_DOT,  KC_P,    KC_Y, LALT(KC_G),
         KC_TAB,             KC_A,                      KC_O,        KC_E,    KC_I,    KC_U,
-        KC_LSHIFT,     TD(APOSTHROPHE_UTILLAYER), KC_Q,        KC_J,    KC_K,    KC_X, KC_BSPACE,
+        KC_LSHIFT,     TD(APOSTHROPHE_MOVEMENT_LAYER), KC_Q,        KC_J,    KC_K,    KC_X, KC_BSPACE,
         KC_LCTRL,           KC_LALT,                   MO(UTILITY_NUMBER), _______, KC_LGUI,
                               KC_LGUI, KC_DELETE,
                                        KC_ENTER,
@@ -14,7 +14,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,   KC_6,    KC_7,    KC_8,    KC_9,    KC_0,     _______,
         RCS(KC_B),   KC_B,    KC_G,    KC_C,    KC_R,    KC_Z,     SE_ARNG,
                    KC_D,    KC_S,    KC_T,    KC_H,    KC_N,     SE_ADIA,
-        KC_BSPACE, KC_F,    KC_M,    KC_W,    KC_V,    KC_COMMA, KC_RSHIFT,
+        KC_BSPACE, KC_F,    KC_M,    KC_W,    KC_V,    KC_COMMA, KC_LSHIFT,
                             KC_CAPSLOCK, _______, _______, _______,  _______,
         KC_APPLICATION, TO(QWERTY),
         _______,
@@ -64,22 +64,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [MOVEMENT] = LAYOUT_ergodox (
         // left hand
-        _______, _______,  _______, _______,    _______,   _______,    _______,
-        _______, _______,  _______, _______,    _______,   _______, TG(MOVEMENT),
-        _______, KC_LEFT,  KC_DOWN, KC_UP,      KC_RIGHT,  _______,
-        _______, _______, _______, LCTL(KC_C), LCTL(KC_V), LCTL(KC_X),    _______,
+        _______, _______,  _______, _______,   _______,    _______,    _______,
+        _______, _______,  _______, _______,   _______,    _______,    _______,
+        _______, _______,  _______, KC_LSHIFT, KC_LCTRL,   _______,
+        _______, _______, _______, LCTL(KC_C), LCTL(KC_V), LCTL(KC_X), _______,
         _______, _______,  _______, _______, _______,
                                       _______, _______,
                                                _______,
-                          KC_LSHIFT, _______, KC_MY_MOVEMENT_LAYER,
+                          _______, _______,_______,
 
         // right hand
         _______,      _______, _______, _______, _______, _______, _______,
-        TG(MOVEMENT), _______, LALT(LSFT(SE_EQL)), _______, _______, _______, _______,
-                      _______, KC_RCTRL, KC_RSHIFT, _______, _______, _______,
-        _______,      _______, LCTL(KC_C), LCTL(KC_V), LCTL(KC_X), _______, _______,
+        _______, _______, _______, _______, _______, _______, _______,
+                      _______, KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, _______,
+        _______,      _______, _______, _______, _______, _______, _______,
                                _______, _______, _______, _______, TO(0),
-        TO(BASE), _______,
+        _______, _______,
         _______,
         _______, _______, _______
     ),
