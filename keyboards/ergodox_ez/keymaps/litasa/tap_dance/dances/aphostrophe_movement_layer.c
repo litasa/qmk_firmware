@@ -11,12 +11,6 @@ void aphostrophe_movement_layer_finished(qk_tap_dance_state_t *state, void *user
         case DOUBLE_HOLD:
             layer_invert(MOVEMENT);
             break;
-
-        // case SINGLE_TAP:
-        //     break;
-        // case SINGLE_HOLD:
-        //     layer_on(UTILITY_NUMBER);
-        //     break;
     }
 }
 
@@ -33,11 +27,5 @@ void aphostrophe_movement_layer_reset(qk_tap_dance_state_t *state, void *user_da
         case DOUBLE_HOLD:
             layer_off(MOVEMENT);
             break;
-        // case SINGLE_TAP:
-        //     tap_code(SE_APOS);
-        //     break;
-        // case SINGLE_HOLD:
-        //     layer_off(UTILITY_NUMBER);
-        //     break;
     }
 }
