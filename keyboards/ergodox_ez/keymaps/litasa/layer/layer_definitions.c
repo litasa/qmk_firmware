@@ -4,4 +4,5 @@ enum layers {
   UTILITY_NUMBER,
   MOVEMENT,
   QWERTY,
+  FUNCTION_KEY,
 };
