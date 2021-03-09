@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,  _______,          _______, _______,             _______, _______,             _______,
         _______, SE_AT,             SE_LABK, SE_HASH,             SE_RABK, KC_MY_TILDE,         _______,
         _______, KC_MY_ARROW_RIGHT, SE_LPRN, TD(COLON_SEMICOLON), SE_RPRN, KC_MY_DOUBLE_COLON,
-        _______, _______,           SE_QUES, SE_ASTR,             SE_DQUO, _______,             _______,
+        _______, _______,           SE_QUES, SE_ASTR,             SE_DQUO, SE_GRV,             _______,
         _______, _______,           _______, _______,             _______,
                               _______, _______,
                                        _______,
