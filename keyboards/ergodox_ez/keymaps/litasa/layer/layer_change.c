@@ -36,19 +36,8 @@ void set_led(uint32_t layer)
     }
 }
 
-void handle_game_layer(uint32_t layer)
-{
-    if (layer != GAME)
-    {
-        autoshift_enable();
-        return;
-    }
-    autoshift_disable();
-}
-
 uint32_t layer_state_set_user(uint32_t state) {
   uint8_t layer = biton32(state);
   set_led(layer);
-  handle_game_layer(layer);
   return state;
 };

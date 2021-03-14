@@ -1,22 +1,22 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [BASE] = LAYOUT_ergodox (
         // left hand
-        KC_ESCAPE,          KC_1,                      KC_2,        KC_3,    KC_4,    KC_5, _______,
-        MO(UTILITY_NUMBER), _______,                   KC_L,        KC_DOT,  KC_P,    KC_Y, KC_LEAD,
-        KC_TAB,             KC_A,                      KC_O,        KC_E,    KC_I,    KC_U,
-        TD(SHIFT_CAPS),     TD(APOSTHROPHE_UTILLAYER), KC_Q,        KC_J,    KC_K,    KC_X, KC_BSPACE,
-        KC_LCTRL,           KC_LALT,                   MO(UTILITY_NUMBER), _______, KC_LGUI,
-                              KC_LGUI, _______,
-                                       KC_DELETE,
-        LSFT_T(KC_SPACE), KC_MY_MOVEMENT_LAYER, KC_BSPACE,
+        KC_ESCAPE,          KC_1,                           KC_2,              KC_3,     KC_4,    KC_5, _______,
+        MO(UTILITY_NUMBER), TD(OE_UTILITY_LAYER),           KC_L,              KC_DOT,   KC_P,    KC_Y, LALT(KC_G),
+        KC_TAB,             KC_A,                           KC_O,              KC_E,     KC_I,    KC_U,
+        KC_LSHIFT,          TD(APOSTHROPHE_MOVEMENT_LAYER), KC_Q,              KC_J,     KC_K,    KC_X, KC_BSPACE,
+        KC_LCTRL,           KC_LALT,                        MO(UTILITY_NUMBER), _______, KC_LGUI,
+                              KC_LGUI, KC_DELETE,
+                                       KC_ENTER,
+        LSFT_T(KC_SPACE), LT(MOVEMENT, KC_ENTER), KC_BSPACE,
 
         // right hand
-        _______,   KC_6,    KC_7,    KC_8,    KC_9,    KC_0,     _______,
-        _______,   KC_B,    KC_G,    KC_C,    KC_R,    KC_Z,     _______,
-                   KC_D,    KC_S,    KC_T,    KC_H,    KC_N,     _______,
-        KC_BSPACE, KC_F,    KC_M,    KC_W,    KC_V,    KC_COMMA, KC_CAPSLOCK,
-                            KC_LEFT,  KC_DOWN, KC_UP,  KC_RIGHT,  KC_RCTRL,
-        KC_APPLICATION, TG(GAME),
+        _______,   KC_6,    KC_7,        KC_8,    KC_9,    KC_0,     _______,
+        RCS(KC_B), KC_B,    KC_G,        KC_C,    KC_R,    KC_Z,     SE_ARNG,
+                   KC_D,    KC_S,        KC_T,    KC_H,    KC_N,     SE_ADIA,
+        KC_BSPACE, KC_F,    KC_M,        KC_W,    KC_V,    KC_COMMA, KC_LSHIFT,
+                            KC_CAPSLOCK, _______, _______, _______,  _______,
+        KC_APPLICATION, TO(QWERTY),
         _______,
         KC_DELETE, MO(SYMBOLS), LCTL_T(KC_ENTER)
     ),
@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,  _______,          _______, _______,             _______, _______,             _______,
         _______, SE_AT,             SE_LABK, SE_HASH,             SE_RABK, KC_MY_TILDE,         _______,
         _______, KC_MY_ARROW_RIGHT, SE_LPRN, TD(COLON_SEMICOLON), SE_RPRN, KC_MY_DOUBLE_COLON,
-        _______, _______,           SE_QUES, SE_ASTR,             SE_DQUO, _______,             _______,
+        _______, _______,           SE_QUES, SE_ASTR,             SE_DQUO, SE_GRV,             _______,
         _______, _______,           _______, _______,             _______,
                               _______, _______,
                                        _______,
@@ -44,9 +44,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [UTILITY_NUMBER] = LAYOUT_ergodox (
         // left hand
         RESET,   _______, _______, _______,          _______,    _______,                      LALT(KC_F4),
-        _______, _______, _______, _______,          _______,    _______,                      _______,
-        _______, _______, _______, KC_ALT_SHIFT_TAB, KC_ALT_TAB, _______,
-        _______, _______, _______, _______,          _______,    TD(WINDOW_MINIMIZE_MAXIMIZE), _______,
+        _______, _______, _______, KC_ALT_SHIFT_TAB, KC_ALT_TAB, _______,                      _______,
+        _______, _______, _______, _______,          _______,    TD(WINDOW_MINIMIZE_MAXIMIZE),
+        _______, _______, _______, LCTL(KC_C),       LCTL(KC_V), LCTL(KC_X),                   _______,
         _______, _______, _______, _______,          _______,
                               _______, _______,
                                        _______,
@@ -60,26 +60,26 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                           _______, _______, _______, _______, TO(0),
         _______, _______,
         _______,
-        _______, _______, _______
+        _______, _______, MO(FUNCTION_KEY)
     ),
     [MOVEMENT] = LAYOUT_ergodox (
         // left hand
-        _______, _______,  _______, _______,    _______,   _______,    _______,
-        _______, _______,  _______, _______,    _______,   _______, TG(MOVEMENT),
-        _______, KC_LEFT,  KC_DOWN, KC_UP,      KC_RIGHT,  _______,
-        _______, _______, LCTL(KC_C), LCTL(KC_X), LCTL(KC_V), _______,    _______,
+        _______, _______,  _______, _______,   _______,    _______,    _______,
+        _______, _______,  _______, _______,   _______,    _______,    _______,
+        _______, _______,  _______, KC_LSHIFT, KC_LCTRL,   _______,
+        _______, _______, _______, LCTL(KC_C), LCTL(KC_V), LCTL(KC_X), _______,
         _______, _______,  _______, _______, _______,
                                       _______, _______,
                                                _______,
-                          KC_LSHIFT, _______, KC_MY_MOVEMENT_LAYER,
+                          _______, _______,_______,
 
         // right hand
-        _______,      _______, _______, _______, _______, _______, _______,
-        TG(MOVEMENT), _______, LALT(LSFT(SE_EQL)), _______, _______, _______, _______,
-                      _______, KC_RCTRL, KC_RSHIFT, _______, _______, _______,
-        _______,      _______, LCTL(KC_C), LCTL(KC_V), LCTL(KC_X), _______, _______,
-                               _______, _______, _______, _______, TO(0),
-        TO(BASE), _______,
+        _______,      _______, _______, _______,     _______,       _______, _______,
+        _______,      _______, _______, KC_MS_WH_UP, KC_MS_WH_DOWN, _______, _______,
+                      _______, KC_LEFT, KC_UP,       KC_DOWN,       KC_RIGHT, _______,
+        _______,      _______, _______, _______,     _______,       _______, _______,
+                               _______, _______,     _______,       _______, TO(0),
+        _______, _______,
         _______,
         _______, _______, _______
     ),
@@ -95,35 +95,35 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                      KC_SPACE, _______, _______,
 
         // right hand
-        SE_ACUT, KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSPACE,
-        TO(0),   SE_Y, SE_U, SE_I, SE_O, SE_P, SE_ARNG,
-                 SE_H, SE_J, SE_K, SE_L, SE_ODIA, SE_ADIA,
+        SE_ACUT, KC_6, KC_7, KC_8,    KC_9,   KC_0,    KC_BSPACE,
+        TO(0),   SE_Y, SE_U, SE_I,    SE_O,   SE_P,    SE_ARNG,
+                 SE_H, SE_J, SE_K,    SE_L,   SE_ODIA, SE_ADIA,
         TO(0),   SE_N, SE_M, SE_COMM, SE_DOT, SE_MINS, KC_RSHIFT,
-                          _______, _______, _______, _______, KC_RCTRL,
+                          _______, _______, _______, _______, TO(0),
         _______, _______,
         _______,
         _______, _______, KC_ENTER
     ),
-        [GAME] = LAYOUT_ergodox (
+    [FUNCTION_KEY] = LAYOUT_ergodox (
         // left hand
-        XXXXXXX, XXXXXXX,   KC_1,    KC_2,    KC_3,    KC_4,    KC_5,
-        XXXXXXX, XXXXXXX,   KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,
-        XXXXXXX, KC_LSHIFT, KC_A,    KC_S,    KC_D,    KC_F,
-        XXXXXXX, KC_LCTRL,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-        XXXXXXX, XXXXXXX,   XXXXXXX, XXXXXXX, XXXXXXX,
-                              XXXXXXX, XXXXXXX,
-                                       XXXXXXX,
-                   KC_SPACE, KC_SPACE, XXXXXXX,
+        RESET,   _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______,
+                              _______, _______,
+                                       _______,
+                     _______, _______, _______,
 
         // right hand
         _______, _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______, _______,
-                 _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, KC_F1,    KC_F2,    KC_F3,    _______, _______,
+                 _______, KC_F4,    KC_F5,    KC_F6,    KC_F10,    _______,
+        _______, _______, KC_F7,    KC_F8,    KC_F9,    _______, _______,
                           _______, _______, _______, _______, TO(0),
-        XXXXXXX, XXXXXXX,
-        XXXXXXX,
-        XXXXXXX, XXXXXXX, XXXXXXX
+        _______, _______,
+        _______,
+        _______, _______, MO(FUNCTION_KEY)
     ),
     // [UTILITY] = LAYOUT_ergodox (
     //     // left hand
