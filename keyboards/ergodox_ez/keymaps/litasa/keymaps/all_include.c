@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,  _______,          _______, _______,             _______, _______,             _______,
         _______, SE_AT,             SE_LABK, SE_HASH,             SE_RABK, KC_MY_TILDE,         _______,
         _______, KC_MY_ARROW_RIGHT, SE_LPRN, TD(COLON_SEMICOLON), SE_RPRN, KC_MY_DOUBLE_COLON,
-        _______, _______,           SE_QUES, SE_ASTR,             SE_DQUO, SE_GRV,             _______,
+        _______, SE_PERC,           SE_QUES, SE_ASTR,             SE_DQUO, SE_GRV,             _______,
         _______, _______,           _______, _______,             _______,
                               _______, _______,
                                        _______,
@@ -33,9 +33,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
         // right hand
         _______, _______, _______, _______,              _______, _______, _______,
-        _______, _______, SE_LBRC, TD(MINUS_UNDERSCORE), SE_RBRC, SE_PLUS, _______,
+        _______, SE_CIRC, SE_LBRC, TD(MINUS_UNDERSCORE), SE_RBRC, SE_PLUS, _______,
                  _______, SE_LCBR, SE_EQL,               SE_RCBR, SE_SLSH, _______,
-        _______, _______, SE_AMPR, SE_PIPE,              SE_EXLM, SE_MINS, _______,
+        _______, SE_DLR, SE_AMPR, SE_PIPE,              SE_EXLM, SE_MINS, _______,
                           _______, _______,              _______, _______, TO(0),
         _______, _______,
         _______,
@@ -87,10 +87,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         // left hand
         KC_ESC,    KC_1, KC_2, KC_3, KC_4, KC_5, SE_PLUS,
         KC_TAB,    SE_Q, SE_W, SE_E, SE_R, SE_T, TO(0),
-        KC_CAPS,   SE_A, SE_S, SE_D, SE_F, SE_G,
+        XXXXXXX,   SE_A, SE_S, SE_D, SE_F, SE_G,
         KC_LSHIFT, SE_Z, SE_X, SE_C, SE_V, SE_B, TO(0),
-        KC_LCTRL,  _______, _______, _______, _______,
-                              _______, _______,
+        KC_LCTRL,  KC_LALT, XXXXXXX, XXXXXXX, XXXXXXX,
+                              _______, KC_LWIN,
                                        _______,
                      KC_SPACE, _______, _______,
 
@@ -99,8 +99,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TO(0),   SE_Y, SE_U, SE_I,    SE_O,   SE_P,    SE_ARNG,
                  SE_H, SE_J, SE_K,    SE_L,   SE_ODIA, SE_ADIA,
         TO(0),   SE_N, SE_M, SE_COMM, SE_DOT, SE_MINS, KC_RSHIFT,
-                          _______, _______, _______, _______, TO(0),
-        _______, _______,
+                         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, TO(0),
+        _______, TO(0),
         _______,
         _______, _______, KC_ENTER
     ),
@@ -137,8 +137,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //                  _______, _______, _______,
 
     //     // right hand
-    //     _______, _______, _______, _______, _______, _______, _______,
-    //     _______, _______, _______, _______, _______, _______, _______,
     //              _______, _______, _______, _______, _______, _______,
     //     _______, _______, _______, _______, _______, _______, _______,
     //                       _______, _______, _______, _______, TO(0),

@@ -6,13 +6,13 @@ void colon_semicolon_finished(qk_tap_dance_state_t *state, void *user_data) {
     switch(tap_state_colon_semicolon)
     {
         case SINGLE_TAP: register_code16(SE_SCLN); break;
-        case SINGLE_HOLD: register_code16(SE_COLN); break;
+        case DOUBLE_TAP: register_code16(SE_COLN); break;
     }
 }
 void colon_semicolon_reset(qk_tap_dance_state_t *state, void *user_data) {
     switch(tap_state_colon_semicolon)
     {
         case SINGLE_TAP: unregister_code16(SE_SCLN); break;
-        case SINGLE_HOLD: unregister_code16(SE_COLN); break;
+        case DOUBLE_TAP: unregister_code16(SE_COLN); break;
     }
 }

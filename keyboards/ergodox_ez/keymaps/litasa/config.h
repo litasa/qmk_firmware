@@ -3,7 +3,6 @@
   See config.h options at https://docs.qmk.fm/#/config_options?id=the-configh-file
 */
 #define ORYX_CONFIGURATOR
-#define AUTO_SHIFT_TIMEOUT 185
 
 #undef TAPPING_TERM
 #define TAPPING_TERM    150
@@ -15,6 +14,3 @@
 
 #define NO_AUTO_SHIFT_SPECIAL
 #define NO_AUTO_SHIFT_NUMERIC
-
-#define LEADER_TIMEOUT 300
-#define LEADER_PER_KEY_TIMING
