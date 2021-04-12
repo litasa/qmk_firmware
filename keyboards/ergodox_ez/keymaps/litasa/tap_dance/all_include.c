@@ -6,5 +6,6 @@
 #include "dances/minus_underscore.c"
 #include "dances/windows_minimize_maximize.c"
 #include "dances/oe_utility_layer.c"
+#include "dances/slash_backslash.c"
 
 #include "tap_dance_actions.c"

@@ -4,4 +4,5 @@ qk_tap_dance_action_t tap_dance_actions[] = {
     [APOSTHROPHE_MOVEMENT_LAYER] = ACTION_TAP_DANCE_FN_ADVANCED_TIME(NULL, aphostrophe_movement_layer_finished, aphostrophe_movement_layer_reset, TAPPING_TERM),
     [WINDOW_MINIMIZE_MAXIMIZE] = ACTION_TAP_DANCE_FN_ADVANCED_TIME(NULL, windows_minimize_maximize_finished, windows_minimize_maximize_reset, TAPPING_TERM + 100),
     [OE_UTILITY_LAYER] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, oe_utility_layer_finished, oe_utility_layer_reset),
+    [SLASH_BACKSLASH] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, slash_backslash_finished, slash_backslash_reset),
 };

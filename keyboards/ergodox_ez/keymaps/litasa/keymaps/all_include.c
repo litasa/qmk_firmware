@@ -34,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         // right hand
         _______, _______, _______, _______,              _______, _______, _______,
         _______, SE_CIRC, SE_LBRC, TD(MINUS_UNDERSCORE), SE_RBRC, SE_PLUS, _______,
-                 _______, SE_LCBR, SE_EQL,               SE_RCBR, SE_SLSH, _______,
+                 _______, SE_LCBR, SE_EQL,               SE_RCBR, TD(SLASH_BACKSLASH), _______,
         _______, SE_DLR, SE_AMPR, SE_PIPE,              SE_EXLM, SE_MINS, _______,
                           _______, _______,              _______, _______, TO(0),
         _______, _______,
